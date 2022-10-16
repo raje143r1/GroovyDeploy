@@ -10,10 +10,10 @@ pipeline{
 					   steps{
 						   script{
 								
-						       if(ArtifacatstoDeploy == 'EarandXML'){
+						       if(ArtifactsToDeploy == 'EarandXML'){
 								   echo '${env.filename}'
 									}
-							 else if(ArtifacatstoDeploy == 'isOnlyEAR'){
+							 else if(ArtifactsToDeploy == 'isOnlyEAR'){
 							  echo '${env.filename}'
 						   }
 					   }
