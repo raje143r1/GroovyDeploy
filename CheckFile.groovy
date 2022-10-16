@@ -11,7 +11,7 @@ pipeline{
 						   script{
 								
 						       if(ArtifactsToDeploy == 'EarandXML'){
-								   echo "{filename}"
+								  echo "${filename}"
 									}
 							 else if(ArtifactsToDeploy == 'isOnlyEAR'){
 							  echo "${filename}"
