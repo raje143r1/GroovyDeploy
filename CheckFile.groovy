@@ -11,10 +11,10 @@ pipeline{
 						   script{
 								
 						       if(ArtifactsToDeploy == 'EarandXML'){
-								   echo '${env.filename}'
+								   echo "{filename}"
 									}
 							 else if(ArtifactsToDeploy == 'isOnlyEAR'){
-							  echo '${env.filename}'
+							  echo "${filename}"
 						   }
 					   }
 					}
