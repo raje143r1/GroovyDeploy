@@ -26,7 +26,7 @@ pipeline{
 							
 							input(
                             id: "userInput",
-                            submitter: 'rvuppara',
+                            submitter: 'admin',
                             submitterParameter: 'submitter',
                             message: "Validate Configuration?")	
 							
@@ -34,6 +34,20 @@ pipeline{
 						}
                     }
                 }
-			   
+		 stage("ValidationConf"){
+				   steps{
+					script{
+							
+							input(
+                            id: "userInput",
+                            submitter: 'admin',
+                            submitterParameter: 'submitter',
+                            message: "Validate Configuration?")	
+							
+							echo "Validation Complete"
+						}
+					}
+               }
+	   
      } 
 }
