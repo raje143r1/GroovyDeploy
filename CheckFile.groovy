@@ -19,6 +19,21 @@ pipeline{
 					   }
 					}
                } 
+		  stage('WorkPermit') {
+                    when { expression { WorkPermit == 'true' }}
+                    steps {
+                       script{
+							
+							input(
+                            id: "userInput",
+                            submitter: 'rvuppara',
+                            submitterParameter: 'submitter',
+                            message: "Validate Configuration?")	
+							
+							echo "Validation Complete"
+						}
+                    }
+                }
 			   
      } 
 }
