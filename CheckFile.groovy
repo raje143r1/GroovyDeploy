@@ -28,7 +28,7 @@ pipeline{
                             id: "userInput",
                             submitter: 'admin',
                             submitterParameter: 'submitter',
-                            message: "Validate Configuration?")	
+                            message: "WorkPermit Approved?")	
 							
 							echo "Validation Complete"
 						}
