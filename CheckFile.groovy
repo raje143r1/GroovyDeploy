@@ -44,7 +44,7 @@ pipeline{
                             submitterParameter: 'submitter',
                             message: "Validate Configuration?")	
 							
-							echo "Validation Complete"
+							echo "WorkPermit Completed"
 						}
 					}
                }
