@@ -34,20 +34,21 @@ pipeline{
 						}
                     }
                 }
-		 stage("ValidationConf"){
-				   steps{
-					script{
+		  stage('WorkPermit') {
+                    when { expression { WorkPermit == 'true' }}
+                    steps {
+                       script{
 							
 							input(
                             id: "userInput",
-                            submitter: 'admin',
+                            submitter: 'R-CorporateSupport',
                             submitterParameter: 'submitter',
-                            message: "Validate Configuration?")	
+                            message: "WorkPermit Approved")	
 							
 							echo "WorkPermit Completed"
 						}
-					}
-               }
+                    }
+                }
 	   
      } 
 }
