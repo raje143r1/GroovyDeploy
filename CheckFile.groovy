@@ -19,7 +19,7 @@ pipeline{
 					   }
 					}
                } 
-		  stage('WorkPermit') {
+		  stage('WorkPermit1323') {
                     when { expression { WorkPermit == 'true' }}
                     steps {
                        script{
